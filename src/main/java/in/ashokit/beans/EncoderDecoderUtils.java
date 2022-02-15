@@ -7,6 +7,7 @@ import java.util.Base64.Encoder;
 public class EncoderDecoderUtils {
 	
 	public String encode(String text) {
+		System.out.println("Updated");
 		Encoder encoder = Base64.getEncoder();
 		byte [] encode = encoder.encode(text.getBytes());
 		return new String(encode);
